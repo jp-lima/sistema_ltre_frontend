@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@source "../../node_modules/@harryy/react-file-browser";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-ltre-light-blue: #21A4E8;
+  --color-ltre-dark-blue: #000DB5;
+  --color-ltre-navy: #082E5A;
+  --color-ltre-sky-50: #E0F2FE;
+  --color-ltre-sky-100: #BAE6FD;
+}
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: 'Geist Variable', sans-serif;
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+
+  --card: #FFFFFF;
+  --card-foreground: #0F172A;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #0F172A;
+
+  --primary: #21A4E8;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #E0F2FE;
+  --secondary-foreground: #0A4B8D;
+
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+
+  --accent: #E0F2FE;
+  --accent-foreground: #0A4B8D;
+
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #21A4E8;
+
+  --chart-1: #21A4E8;
+  --chart-2: #0A4B8D;
+  --chart-3: #082E5A;
+  --chart-4: #38BDF8;
+  --chart-5: #7DD3FC;
+
+  --radius: 0.625rem;
+
+  --sidebar: #000DB5;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #21A4E8;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #082E5A;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #082E5A;
+  --sidebar-ring: #21A4E8;
+}
+
+.dark {
+  --background: #0F172A;
+  --foreground: #F8FAFC;
+
+  --card: #1E293B;
+  --card-foreground: #F8FAFC;
+
+  --popover: #1E293B;
+  --popover-foreground: #F8FAFC;
+
+  --primary: #21A4E8;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #1E3A8A;
+  --secondary-foreground: #BFDBFE;
+
+  --muted: #334155;
+  --muted-foreground: #94A3B8;
+
+  --accent: #1E3A8A;
+  --accent-foreground: #BFDBFE;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #334155;
+  --input: #334155;
+  --ring: #21A4E8;
+
+  --chart-1: #38BDF8;
+  --chart-2: #21A4E8;
+  --chart-3: #0A4B8D;
+  --chart-4: #7DD3FC;
+  --chart-5: #BAE6FD;
+
+  --sidebar: #082E5A;
+  --sidebar-foreground: #F8FAFC;
+  --sidebar-primary: #21A4E8;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #0A4B8D;
+  --sidebar-accent-foreground: #F8FAFC;
+  --sidebar-border: #0A4B8D;
+  --sidebar-ring: #21A4E8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
