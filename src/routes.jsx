@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router'
 import App from './App'
 import AuthPage from './pages/AuthPage'
 import DesignSystemPage from './design-system'
+import ModelsPage from './pages/ModelsPage'
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
   {
     path: '/cadastro',
     element: <AuthPage mode="register" />,
+  },
+  {
+    path: '/models',
+    element: <ModelsPage />,
   },
   {
     path: '/design-system',
