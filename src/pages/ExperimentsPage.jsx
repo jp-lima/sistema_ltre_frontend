@@ -7,10 +7,10 @@ import { Card } from "@/components/ui/card";
 const experiments = [
   {
     id: 1,
-    name: "Adsorcao",
+    name: "Adsorção",
     image: "/experiments/adsorcao.jpg",
     subtitle: "Dados de laboratório",
-    href: "/experiments/adsorcao",
+    href: "/experimentos/adsorcao",
   },
 ];
 
@@ -32,7 +32,7 @@ function ExperimentCard({ experiment }) {
   );
 }
 
-export default function ModelsPage() {
+export default function ExperimentsPage() {
   return (
     <>
       <Sidebar />
